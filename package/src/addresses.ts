@@ -1,0 +1,5 @@
+export const TokenAddress = '0x795d300855069f602862c5e23814bdeeb25dca6b'
+export const AuctionAddress = '0x9172f26dfA3A68C95dE7CD8199CC578b387bBD48'
+export const GovernorAddress = '0x4A57EbEb2d0a33a5b9354Fe2D5178373CcBab5f5'
+export const TreasuryAddress = '0x6D538Bab6E961dD9719Bd6f9676293989CA8D714'
+export const MetadataAddress = '0xfbeEeA51d0AeEDdF3eb602A68675730D765980fd'

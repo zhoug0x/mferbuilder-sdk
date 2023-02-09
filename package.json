@@ -1,0 +1,14 @@
+{
+  "name": "mfbldr",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build:sdk": "yarn workspace mferbuilder-sdk build",
+    "dev:node": "yarn workspace with-node dev",
+    "dev:react": "yarn workspace with-react dev"
+  },
+  "workspaces": [
+    "package",
+    "examples/*"
+  ]
+}
