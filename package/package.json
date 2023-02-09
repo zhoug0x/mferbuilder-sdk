@@ -1,19 +1,9 @@
 {
-  "name": "mferbuilder-sdk",
-  "private": false,
+  "name": "package",
+  "version": "0.0.0",
   "type": "module",
-  "version": "1.0.0",
-  "description": "mferbuilderDAO TypeScript SDK",
-  "types": "index.d.ts",
-  "source": "src/index.ts",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "author": "zhoug",
   "license": "MIT",
   "scripts": {
-    "publish": "npm publish",
     "clean": "rm -rf ./dist",
     "prepack": "yarn clean && tsup src/index.ts",
     "build": "yarn run prepack"

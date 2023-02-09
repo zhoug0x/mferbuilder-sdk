@@ -2,12 +2,16 @@
 
 > the `mferbuilder-sdk` is a Typescript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts.
 
-*this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/neokry/builder-sdk) by [neokry](https://github.com/neokry).*
+_this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/neokry/builder-sdk) by [neokry](https://github.com/neokry)._
 
 ## getting started
 
 ```bash
 yarn add mferbuilder-sdk
+
+# or
+
+npm install mferbuilder-sdk
 ```
 
 ## quick example
@@ -30,10 +34,10 @@ const tokenURI = await tokenContract.tokenURI(auctionData.tokenId)
 
 there are more in-depth examples in the `examples` folder:
 
-- `with-node`
 - `with-react`
+- `with-node`
 
-## run the clientside example
+## run the React client example
 
 install dependencies
 
@@ -59,10 +63,12 @@ run the local server
 yarn dev
 ```
 
-**you can use the same steps as above to run the `node-example`.*
+\*_you can use the same steps as above to run the `node-example`._
 
 ## local development
+
 to make changes to the `mferbuilder-sdk`, you can edit the files in `package` directory.
 
-***important!***  
-> run `yarn sdk:build` after saving files in `package` to reflect the changes for the apps in `examples`.
+**_important!_**
+
+> run `yarn build` in the `package` directory after updating files to reflect the changes in the `examples`.

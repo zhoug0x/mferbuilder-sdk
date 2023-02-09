@@ -1,14 +1,21 @@
 {
-  "name": "mfbldr",
-  "version": "0.0.0",
-  "private": true,
+  "name": "mferbuilder-sdk",
+  "version": "1.0.0",
+  "description": "mferbuilderDAO TypeScript SDK",
+  "author": "zhoug <contact@zhoug.online>",
+  "repository": "zhoug0x/mferbuilder-sdk",
+  "license": "MIT",
+  "type": "module",
+  "source": "package/src/index.ts",
+  "types": "package/dist/index.d.ts",
+  "files": [
+    "package/dist"
+  ],
   "scripts": {
-    "build:sdk": "yarn workspace mferbuilder-sdk build",
-    "dev:node": "yarn workspace with-node dev",
-    "dev:react": "yarn workspace with-react dev"
+    "publish": "npm run publish"
   },
-  "workspaces": [
-    "package",
-    "examples/*"
+  "keywords": [
+    "mfers",
+    "mferbuilderDAO"
   ]
 }
