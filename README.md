@@ -1,8 +1,8 @@
-# mferbuilder-SDK
+# mferbuilder-sdk
 
-> the easiest way to build on [mferbuilderDAO](https://mferbuilderdao.org)
+> the `mferbuilder-sdk` is a Typescript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts.
 
-the `mferbuilder-SDK` is a Typescript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts.
+*this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/neokry/builder-sdk) by [neokry](https://github.com/neokry).*
 
 ## getting started
 
