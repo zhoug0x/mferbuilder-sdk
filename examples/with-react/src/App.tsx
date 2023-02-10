@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ethers } from 'ethers'
-import { MferBuilderSDK } from 'mferbuilder-sdk'
+import { MferBuilderDAO } from 'mferbuilderdao-sdk'
 import { Auction, AuctionResult, Token } from './interfaces'
 
 // to prevent TypeScript error on undefined `window.ethereum`
@@ -13,9 +13,9 @@ function App() {
   // Fetch data for current mferbuilderDAO auction
   useEffect(() => {
     if (window.ethereum) {
-      // connect to the MferBuilderSDK with an Ethers.js provider (or signer)
+      // connect to the MferBuilderDAO with an Ethers.js provider (or signer)
       const provider = new ethers.providers.Web3Provider(window.ethereum)
-      const sdk = MferBuilderSDK.connect({ signerOrProvider: provider })
+      const sdk = MferBuilderDAO.connect({ signerOrProvider: provider })
 
       // use the SDK to connect to the auction and token contracts
       const auctionContract = sdk.auction()
@@ -67,7 +67,7 @@ function App() {
 
   return (
     <>
-      <h1>mferbuilderSDK with React</h1>
+      <h1>MferBuilderDAO with React</h1>
       <hr />
       <h3>current auction data:</h3>
       <div

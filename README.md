@@ -1,25 +1,25 @@
-# mferbuilder-sdk
+# mferbuilderdao-sdk
 
-> the `mferbuilder-sdk` is a Typescript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts.
+> the `mferbuilderdao-sdk` is a TypeScript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts.
 
 _this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/neokry/builder-sdk) by [neokry](https://github.com/neokry)._
 
 ## getting started
 
 ```bash
-yarn add mferbuilder-sdk
+yarn add mferbuilderdao-sdk
 
 # or
 
-npm install mferbuilder-sdk
+npm install mferbuilderdao-sdk
 ```
 
 ## quick example
 
 ```ts
-import { MferBuilderSDK } from 'mferbuilder-sdk'
+import { MferBuilderDAO } from 'mferbuilderdao-sdk'
 
-const { auction, token } = MferBuilderSDK.connect({
+const { auction, token } = MferBuilderDAO.connect({
   signerOrProvider: your_provider_here,
 })
 
@@ -67,7 +67,7 @@ yarn dev
 
 ## local development
 
-to make changes to the `mferbuilder-sdk`, you can edit the files in `package` directory.
+to make changes to the `mferbuilderdao-sdk`, you can edit the files in `package` directory.
 
 **_important!_**
 

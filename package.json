@@ -1,9 +1,9 @@
 {
-  "name": "mferbuilder-sdk",
+  "name": "mferbuilderdao-sdk",
   "version": "1.0.0",
-  "description": "mferbuilderDAO TypeScript SDK",
+  "description": "a TypeScript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts",
   "author": "zhoug <contact@zhoug.online>",
-  "repository": "zhoug0x/mferbuilder-sdk",
+  "repository": "zhoug0x/mferbuilderdao-sdk",
   "license": "MIT",
   "type": "module",
   "source": "package/src/index.ts",

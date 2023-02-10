@@ -1,11 +1,11 @@
 import { ethers } from 'ethers'
-import { MferBuilderSDK } from 'mferbuilder-sdk'
+import { MferBuilderDAO } from 'mferbuilderdao-sdk'
 
 const main = async () => {
   const provider = ethers.getDefaultProvider('mainnet')
 
   const { auction, token, governor, treasury, metadata } =
-    MferBuilderSDK.connect({
+    MferBuilderDAO.connect({
       signerOrProvider: provider,
     })
 

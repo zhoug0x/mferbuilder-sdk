@@ -24,7 +24,7 @@ export type SDKOptions = {
   signerOrProvider: Signer | providers.Provider
 }
 
-export class MferBuilderSDK {
+export class MferBuilderDAO {
   static connect({ signerOrProvider }: SDKOptions): {
     token: () => GetContractResult<typeof TokenABI>
     auction: () => GetContractResult<typeof AuctionABI>
