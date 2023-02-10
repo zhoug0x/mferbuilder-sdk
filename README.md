@@ -6,6 +6,8 @@ _this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/n
 
 ## getting started
 
+add the package with your package manager of choice | [npm registry page](https://www.npmjs.com/package/mferbuilderdao-sdk)
+
 ```bash
 yarn add mferbuilderdao-sdk
 
