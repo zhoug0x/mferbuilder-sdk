@@ -6,7 +6,7 @@ import {
   GovernorABI,
   TreasuryABI,
   MetadataABI,
-} from './src/abis'
+} from './abis'
 
 export const TokenABI: any
 export const AuctionABI: any

@@ -67,8 +67,22 @@ yarn dev
 
 ## local development
 
-to make changes to the `mferbuilderdao-sdk`, you can edit the files in `package` directory.
+install dependencies (in root folder)
 
-**_important!_**
+```
+npm install
 
-> run `yarn build` in the `package` directory after updating files to reflect the changes in the `examples`.
+# or
+
+yarn
+```
+
+to make changes to the `mferbuilderdao-sdk`, you can edit the files in `package` directory then run the following:
+
+```
+npm run build
+
+# or
+
+yarn build
+```
