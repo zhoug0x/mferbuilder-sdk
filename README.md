@@ -7,14 +7,14 @@ _this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/n
 [npm page](https://www.npmjs.com/package/mferbuilderdao-sdk)
 
 ## just getting started
-the SDK requires ethers.js v5 as a dependency. add this along with the SDK using the package with your package manager of choice
+this SDK requires ethers.js v5 as a dependency, add both packages with your package manager of choice like so
 
 ```bash
-yarn add mferbuilderdao-sdk ethers@5.7.2
+yarn add ethers@5.7.2 mferbuilderdao-sdk 
 
 # or
 
-npm install mferbuilderdao-sdk ethers@5.7.2
+npm install ethers@5.7.2 mferbuilderdao-sdk 
 ```
 
 ## quick example
