@@ -4,7 +4,7 @@
 
 _this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/neokry/builder-sdk) by [neokry](https://github.com/neokry)._
 
-## getting started
+## just getting started
 
 add the package with your package manager of choice | [npm registry page](https://www.npmjs.com/package/mferbuilderdao-sdk)
 
@@ -19,15 +19,22 @@ npm install mferbuilderdao-sdk
 ## quick example
 
 ```ts
+import { ethers } from 'ethers'
 import { MferBuilderDAO } from 'mferbuilderdao-sdk'
 
+// grab your Ethers provider of choice!
+const provider = ethers.getDefaultProvider('mainnet')
+
+// connect to the mferbuilderDAO SDK
 const { auction, token } = MferBuilderDAO.connect({
-  signerOrProvider: your_provider_here,
+  signerOrProvider: provider,
 })
 
+// access to the DAO's Auction and Token contracts
 const auctionContract = auction()
 const tokenContract = token()
 
+// grab that data, mfer! all contract functions & events are available
 const auctionData = await auctionContract.auction()
 const tokenURI = await tokenContract.tokenURI(auctionData.tokenId)
 ```
@@ -39,7 +46,7 @@ there are more in-depth examples in the `examples` folder:
 - `with-react`
 - `with-node`
 
-## run the React client example
+## develop locally using the examples
 
 install dependencies
 
@@ -47,44 +54,38 @@ install dependencies
 yarn
 ```
 
-navigate to the `with-react` example directory
+### with React
+
+setup the local environment and run the React app
 
 ```bash
-cd examples/with-react
+yarn dev:react
 ```
 
-install the dependencies
+### with Node
+
+setup the local Node environment
 
 ```bash
-yarn
+yarn dev:node
 ```
 
-run the local server
+navigate to the `with-node` example directory
+
+```bash
+cd examples/with-node
+```
+
+run the script!
 
 ```bash
 yarn dev
 ```
 
-\*_you can use the same steps as above to run the `node-example`._
+### development workflow
 
-## local development
+you can edit the files in `package` directory then run the following command at the root of the project to have the changes reflect in the examples
 
-install dependencies (in root folder)
-
-```
-npm install
-
-# or
-
-yarn
-```
-
-to make changes to the `mferbuilderdao-sdk`, you can edit the files in `package` directory then run the following:
-
-```
-npm run build
-
-# or
-
+```bash
 yarn build
 ```

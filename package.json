@@ -1,24 +1,32 @@
 {
   "name": "mferbuilderdao-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a TypeScript library that provides type safe interactions and data fetching for the mferbuilderDAO contracts",
   "author": "zhoug <contact@zhoug.online>",
   "repository": "zhoug0x/mferbuilderdao-sdk",
   "license": "MIT",
+  "homepage": "https://github.com/zhoug0x/mferbuilderdao-sdk",
+  "bugs": {
+    "url": "https://github.com/zhoug0x/mferbuilderdao-sdk/issues"
+  },
   "type": "module",
-  "module": "./package/dist/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "source": "package/index.ts",
-  "types": "package/dist/index.d.ts",
   "files": [
-    "package/dist"
+    "dist"
   ],
   "scripts": {
-    "clean": "rm -rf ./package/dist",
-    "prepack": "yarn clean && tsup package/index.ts",
+    "clean": "rimraf ./dist",
+    "prepack": "yarn clean && tsup package/index.ts -d dist",
     "build": "yarn run prepack",
+    "prep-link": "yarn build && yarn link",
+    "dev:node": "yarn prep-link && cd examples/with-node && yarn link mferbuilderdao-sdk && yarn && echo '\n\nNode environment linked!\n\n'",
+    "dev:react": "yarn prep-link && cd examples/with-react && yarn link mferbuilderdao-sdk && yarn && yarn dev",
     "publish": "npm run publish"
   },
   "devDependencies": {
+    "rimraf": "^4.1.2",
     "ts-node": "^10.9.1",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"
