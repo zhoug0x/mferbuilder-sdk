@@ -4,22 +4,23 @@
 
 _this is an mferbuilderDAO-scoped fork of the [builder-sdk](https://github.com/neokry/builder-sdk) by [neokry](https://github.com/neokry)._
 
-## just getting started
+[npm page](https://www.npmjs.com/package/mferbuilderdao-sdk)
 
-add the package with your package manager of choice | [npm registry page](https://www.npmjs.com/package/mferbuilderdao-sdk)
+## just getting started
+the SDK requires ethers.js v5 as a dependency. add this along with the SDK using the package with your package manager of choice
 
 ```bash
-yarn add mferbuilderdao-sdk
+yarn add mferbuilderdao-sdk ethers@5.7.2
 
 # or
 
-npm install mferbuilderdao-sdk
+npm install mferbuilderdao-sdk ethers@5.7.2
 ```
 
 ## quick example
 
 ```ts
-import { ethers } from 'ethers'
+import { ethers } from 'ethers' // make sure you are using Ethers v5! Ethers v6 is not yet supported
 import { MferBuilderDAO } from 'mferbuilderdao-sdk'
 
 // grab your Ethers provider of choice!
